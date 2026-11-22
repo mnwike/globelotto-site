@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0a0620">
+<title>EuroMillions · GlobeLotto</title>
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="top">
+  <a class="logo" href="/"><span class="orb"></span><span>Globe<b>Lotto</b></span></a>
+  <nav>
+    <a href="/#games">Lotteries</a>
+    
+    <a href="/how">How it works</a>
+  </nav>
+  <div class="right"><span class="pill">Preview</span></div>
+</header>
+<main>
+<div class="game-head" style="--h:31">
+  <span class="flag">🇪🇺</span>
+  <div><h1>EuroMillions</h1><span class="countdown big" data-g="euromillions" data-ts="1795550400"></span></div>
+</div>
+<p class="meta">
+  Pick 5 from 1–50 and 2 Lucky Stars from 1–12.
+  Next draw: <time data-g="euromillions" data-ts="1795550400">Tue 24 Nov, 20:00 UTC</time>.  </p>
+<h2>Pick your numbers</h2>
+<form id="picker" data-main-n="5" data-main-max="50" data-bonus-n="2" data-bonus-max="12" data-bonus-label="Lucky Stars" data-cost="300" data-fee="75"
+  data-l-quick="Quick pick" data-l-clear="Clear">
+  <input type="hidden" name="lines">
+  <div id="lines"></div>
+  <button type="button" class="btn ghost" id="addline">+ Add a line</button>
+  <div class="summary">
+    <label>Number of draws      <select name="draws"><option>1</option><option>2</option><option>4</option><option>8</option></select></label>
+    <table>
+      <tr><td>Ticket cost</td><td id="s-cost">$0.00</td></tr>
+      <tr><td>Service fee</td><td id="s-fee">$0.00</td></tr>
+      <tr class="tot"><td>Total</td><td id="s-total">$0.00</td></tr>
+    </table>
+    <button class="btn" id="submit" disabled>Add to cart</button>
+  </div>
+</form>
+</main>
+<footer>
+  <p>18+ only. Lottery play is gambling: set a budget and stick to it. <a href="/responsible-play">Responsible play</a></p>
+  <p>GlobeLotto is an independent ticket purchasing service and is not affiliated with any lottery operator.</p>
+    <p><a href="/how">How it works</a> · <a href="/responsible-play">Responsible play</a></p>
+</footer>
+<canvas id="fx" aria-hidden="true"></canvas>
+<script src="/assets/preview.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
